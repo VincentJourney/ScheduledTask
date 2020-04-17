@@ -1,0 +1,15 @@
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.Commom.dll
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp3.1\AS.Dapper.AssemblyInfoInputs.cache
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp3.1\AS.Dapper.AssemblyInfo.cs
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp3.1\AS.Dapper.csprojAssemblyReference.cache
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.Dapper.deps.json
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.Dapper.dll
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.Commom.pdb
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp3.1\AS.Dapper.csproj.CopyComplete
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.Dapper.pdb
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.IDAO.dll
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.Model.dll
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.IDAO.pdb
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\bin\Debug\netcoreapp3.1\AS.Model.pdb
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp3.1\AS.Dapper.dll
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp3.1\AS.Dapper.pdb

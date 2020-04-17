@@ -1,0 +1,22 @@
+
+时间:2020-04-09 09:36:34
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:There is already an open DataReader associated with this Command which must be closed first.
+异常堆栈:    at System.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at System.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetListFromSql[S](String sql) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 93
+   at AS.OCR.Dapper.DAO.OrderDAO.GetOrderByExpiry() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\OrderDAO.cs:line 29
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 49

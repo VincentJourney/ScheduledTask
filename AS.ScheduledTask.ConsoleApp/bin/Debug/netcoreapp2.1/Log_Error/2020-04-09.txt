@@ -1,0 +1,762 @@
+
+时间:2020-04-09 20:06:34
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:Unable to cast object of type 'System.Data.ProviderBase.DbConnectionClosedConnecting' to type 'System.Data.SqlClient.SqlInternalConnectionTds'.
+异常堆栈:    at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at AS.OCR.Dapper.Base.DapperHelper.OpenCurrentDbConnection() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DapperHelper.cs:line 58
+   at AS.OCR.Dapper.Base.DBContext.get_Db() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 18
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetListFromSql[S](String sql) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 93
+   at AS.OCR.Dapper.DAO.OrderDAO.GetOrderByExpiry() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\OrderDAO.cs:line 29
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 60
+
+时间:2020-04-09 20:51:41
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:123123
+异常堆栈:    at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 70
+
+时间:2020-04-09 20:53:52
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:123123
+异常堆栈:    at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 71
+
+时间:2020-04-09 21:05:50
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:测试事务
+异常堆栈:    at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 70
+
+时间:2020-04-09 21:10:27
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:测试事务
+异常堆栈:    at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 72
+
+时间:2020-04-09 21:11:28
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:测试事务
+异常堆栈:    at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 72
+
+时间:2020-04-09 21:29:30
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteNonQuery requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in C:\projects\dapper\Dapper\SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in C:\projects\dapper\Dapper\SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 441
+   at Dapper.Contrib.Extensions.SqlMapperExtensions.Update[T](IDbConnection connection, T entityToUpdate, IDbTransaction transaction, Nullable`1 commandTimeout) in C:\projects\dapper\Dapper.Contrib\SqlMapperExtensions.cs:line 456
+   at AS.OCR.Dapper.Base.DBContext.Update[T](T model) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 117
+   at AS.OCR.Dapper.Base.Infrastructure`1.Update(T Entity) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 32
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 70
+
+时间:2020-04-09 21:32:18
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteNonQuery requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite, String methodName)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) in C:\projects\dapper\Dapper\SqlMapper.cs:line 2797
+   at Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) in C:\projects\dapper\Dapper\SqlMapper.cs:line 568
+   at Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 441
+   at Dapper.Contrib.Extensions.SqlMapperExtensions.Update[T](IDbConnection connection, T entityToUpdate, IDbTransaction transaction, Nullable`1 commandTimeout) in C:\projects\dapper\Dapper.Contrib\SqlMapperExtensions.cs:line 456
+   at AS.OCR.Dapper.Base.DBContext.Update[T](T model) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 117
+   at AS.OCR.Dapper.Base.Infrastructure`1.Update(T Entity) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 32
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 70
+
+时间:2020-04-09 21:46:01
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:測試事務123
+异常堆栈:    at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 75
+
+时间:2020-04-09 21:46:43
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:測試事務123
+异常堆栈:    at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 75
+
+时间:2020-04-09 21:46:44
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:Invalid operation. The connection is closed.
+异常堆栈:    at System.Data.SqlClient.SqlConnection.GetOpenTdsConnection()
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at System.Data.Common.DbConnection.System.Data.IDbConnection.BeginTransaction()
+   at AS.Dapper.Base.DapperTransaction..ctor(IDbConnection dbConnection) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DapperTransaction.cs:line 16
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 68
+
+时间:2020-04-09 23:01:24
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:01:24
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:01:24
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:01:24
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:02:13
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:02:15
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:02:16
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:02:16
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:23
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:27
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:27
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:27
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:35
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:36
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:38
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:39
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:46
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:46
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:46
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:46
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:49
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:49
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:49
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:49
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:53
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:53
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:53
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:53
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:56
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:56
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:56
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:03:56
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:13:03
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:14:03
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:16:21
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:19:23
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95
+
+时间:2020-04-09 23:22:06
+类型:Error
+基本信息:【OrderCancel 异常】
+异常信息:ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+异常堆栈:    at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1051
+   at Dapper.SqlMapper.QueryImpl[T](IDbConnection cnn, CommandDefinition command, Type effectiveType)+MoveNext() in C:\projects\dapper\Dapper\SqlMapper.cs:line 1079
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in C:\projects\dapper\Dapper\SqlMapper.cs:line 721
+   at AS.OCR.Dapper.Base.DBContext.Query[T](String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\DBContext.cs:line 46
+   at AS.OCR.Dapper.Base.Infrastructure`1.GetList(String whereStr, IDbTransaction dbTransaction) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\Base\Infrastructure.cs:line 78
+   at AS.OCR.Dapper.DAO.PayingDAO.GetByOrderId(Guid OrderiD, IDbTransaction dbTranscation) in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\DAO\PayingDAO.cs:line 14
+   at AS.Service.OrderService.OrderCancel() in E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Service\OrderService.cs:line 95

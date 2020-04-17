@@ -1,0 +1,7 @@
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\bin\Release\netcoreapp2.1\AS.Commom.deps.json
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\bin\Release\netcoreapp2.1\AS.Commom.dll
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\bin\Release\netcoreapp2.1\AS.Commom.pdb
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.1\AS.Commom.AssemblyInfoInputs.cache
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.1\AS.Commom.AssemblyInfo.cs
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.1\AS.Commom.dll
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.1\AS.Commom.pdb
