@@ -223,7 +223,6 @@ namespace AS.Service
         /// <returns></returns>
         private string Post(string route, string postData)
         {
-            DateTime t1 = DateTime.Now;
             string posturl = ConfigurationUtil.CRMUrl + "/" + route + "?token=" + Token;
             var result = HttpHelper.HttpPost(posturl, postData);
             return result;

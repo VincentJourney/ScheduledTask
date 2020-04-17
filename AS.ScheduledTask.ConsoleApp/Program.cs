@@ -11,6 +11,9 @@ namespace AS.ScheduledTask.ConsoleApp
 
         private static System.Timers.Timer time;
         private static bool OrderCancelFlag = true;
+
+        private static DateTime Today = DateTime.Now.Date.AddHours(1);
+        private static bool OrderReturnFlag = false;
         static void Main(string[] args)
         {
             //await QuartzStartup.Start();
@@ -19,6 +22,7 @@ namespace AS.ScheduledTask.ConsoleApp
             time.Enabled = true;
             time.Elapsed += OrderCancel;
             time.Elapsed += OrderReturn;
+            time.Interval = Convert.ToInt32(1000 * ConfigurationUtil.CancelTriggerTime);
             time.Start();
 
             Console.ReadKey();
@@ -36,7 +40,7 @@ namespace AS.ScheduledTask.ConsoleApp
                 OrderCancelFlag = false;
                 OrderService orderService = new OrderService();
                 orderService.OrderCancel();
-                time.Interval = Convert.ToInt32(1000 * ConfigurationUtil.CancelTriggerTime);
+
                 GC.WaitForPendingFinalizers();
                 GC.Collect();
                 time.Start();
@@ -51,7 +55,21 @@ namespace AS.ScheduledTask.ConsoleApp
         /// <param name="e"></param>
         public static void OrderReturn(object sender, EventArgs e)
         {
+            if (DateTime.Now >= Today)
+            {
+                OrderReturnFlag = true;
+                Today.AddDays(1);
+            }
 
+            if (OrderReturnFlag)
+            {
+                OrderReturnFlag = false;
+                OrderService orderService = new OrderService();
+                orderService.OrderRurn();
+                GC.WaitForPendingFinalizers();
+                GC.Collect();
+                time.Start();
+            }
         }
     }
 }
