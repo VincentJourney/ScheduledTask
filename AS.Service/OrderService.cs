@@ -25,6 +25,7 @@ namespace AS.Service
 
         public void OrderRurn()
         {
+            Console.WriteLine($"========{DateTime.Now.ToString()}：执行订单退货========");
             try
             {
                 var OrderIdList = orderDAO.GetAllCanRefundOrder();
@@ -57,7 +58,7 @@ namespace AS.Service
 
         public void OrderCancel()
         {
-
+            Console.WriteLine($"========{DateTime.Now.ToString()}：逾期未支付订单自动关闭启动========");
             var OrderList = orderDAO.GetOrderByExpiry();
             foreach (var x in OrderList)
             {

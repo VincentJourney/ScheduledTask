@@ -1,4 +1,5 @@
 ﻿using AS.Commom.Configuration;
+using AS.Commom.Log;
 using AS.QuartZ;
 using AS.Service;
 using System;
@@ -10,10 +11,13 @@ namespace AS.ScheduledTask.ConsoleApp
     {
 
         private static System.Timers.Timer time;
-        private static bool OrderCancelFlag = true;
 
-        private static DateTime Today = DateTime.Now.Date.AddHours(1);
-        private static bool OrderReturnFlag = false;
+        private static bool OrderCancelFlag = true;//订单关闭
+        private static bool OrderReturnFlag = false;//订单退货
+
+
+        private static DateTime Today = DateTime.Now.Date.AddHours(ConfigurationUtil.OrderReturnTime);
+
         static void Main(string[] args)
         {
             //await QuartzStartup.Start();
@@ -35,16 +39,23 @@ namespace AS.ScheduledTask.ConsoleApp
         /// <param name="e"></param>
         public static void OrderCancel(object sender, EventArgs e)
         {
-            if (OrderCancelFlag)
+            try
             {
-                OrderCancelFlag = false;
-                OrderService orderService = new OrderService();
-                orderService.OrderCancel();
+                if (OrderCancelFlag)
+                {
+                    OrderCancelFlag = false;
+                    OrderService orderService = new OrderService();
+                    orderService.OrderCancel();
 
-                GC.WaitForPendingFinalizers();
-                GC.Collect();
-                time.Start();
-                OrderCancelFlag = true;
+                    GC.WaitForPendingFinalizers();
+                    GC.Collect();
+                    time.Start();
+                    OrderCancelFlag = true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error("启用OrderCancel异常", ex);
             }
         }
 
@@ -55,20 +66,27 @@ namespace AS.ScheduledTask.ConsoleApp
         /// <param name="e"></param>
         public static void OrderReturn(object sender, EventArgs e)
         {
-            if (DateTime.Now >= Today)
+            try
             {
-                OrderReturnFlag = true;
-                Today.AddDays(1);
-            }
+                if (DateTime.Now >= Today)
+                {
+                    OrderReturnFlag = true;
+                    Today = Today.AddDays(1);
+                }
 
-            if (OrderReturnFlag)
+                if (OrderReturnFlag)
+                {
+                    OrderReturnFlag = false;
+                    OrderService orderService = new OrderService();
+                    orderService.OrderRurn();
+                    GC.WaitForPendingFinalizers();
+                    GC.Collect();
+                    time.Start();
+                }
+            }
+            catch (Exception ex)
             {
-                OrderReturnFlag = false;
-                OrderService orderService = new OrderService();
-                orderService.OrderRurn();
-                GC.WaitForPendingFinalizers();
-                GC.Collect();
-                time.Start();
+                Log.Error("启用OrderReturn异常", ex);
             }
         }
     }

@@ -50,6 +50,7 @@ namespace AS.Commom.Configuration
         /// 待支付逾期时间
         /// </summary>
         public static int ExpiryTime => GetConfig<int>("ExpiryTime");
+        public static int OrderReturnTime => GetConfig<int>("OrderReturnTime");
         public static string RedisKey_ItemInventotyQty => "ItemInventotyQty";
     }
 }
