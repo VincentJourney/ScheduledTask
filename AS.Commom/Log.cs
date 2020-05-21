@@ -29,6 +29,7 @@ namespace AS.Commom.Log
 
                   StreamWriter sw = File.AppendText(logfile);
                   var exInfo = ex == null ? "" : $@"异常信息:{ex?.Message}
+内部异常:{ex?.InnerException.Message}
 异常堆栈: { ex?.StackTrace}";
                   var loginfo = $@"
 时间:{DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")}

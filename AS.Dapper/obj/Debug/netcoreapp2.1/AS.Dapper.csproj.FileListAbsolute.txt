@@ -13,3 +13,4 @@ E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp2.1\A
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp2.1\AS.Dapper.csproj.CopyComplete
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp2.1\AS.Dapper.dll
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp2.1\AS.Dapper.pdb
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Dapper\obj\Debug\netcoreapp2.1\AS.Dapper.csproj.CoreCompileInputs.cache

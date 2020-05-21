@@ -13,7 +13,7 @@ namespace AS.ScheduledTask.ConsoleApp
         private static System.Timers.Timer time;
 
         private static bool OrderCancelFlag = true;//订单关闭
-        private static bool OrderReturnFlag = false;//订单退货
+        private static bool OrderReturnFlag = ConfigurationUtil.OrderReturnEnabled;//订单退货
 
 
         private static DateTime Today = DateTime.Now.Date.AddHours(ConfigurationUtil.OrderReturnTime);
@@ -25,7 +25,10 @@ namespace AS.ScheduledTask.ConsoleApp
             time = new System.Timers.Timer();
             time.Enabled = true;
             time.Elapsed += OrderCancel;
-            time.Elapsed += OrderReturn;
+
+            if (ConfigurationUtil.OrderReturnEnabled)
+                time.Elapsed += OrderReturn;
+
             time.Interval = Convert.ToInt32(1000 * ConfigurationUtil.CancelTriggerTime);
             time.Start();
 

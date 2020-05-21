@@ -9,3 +9,4 @@ E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.IDAO\obj\Debug\netcoreapp2.1\AS.
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.IDAO\obj\Debug\netcoreapp2.1\AS.IDAO.csproj.CopyComplete
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.IDAO\obj\Debug\netcoreapp2.1\AS.IDAO.dll
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.IDAO\obj\Debug\netcoreapp2.1\AS.IDAO.pdb
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.IDAO\obj\Debug\netcoreapp2.1\AS.IDAO.csproj.CoreCompileInputs.cache

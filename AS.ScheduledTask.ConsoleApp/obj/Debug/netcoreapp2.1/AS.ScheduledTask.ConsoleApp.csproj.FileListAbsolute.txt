@@ -23,3 +23,5 @@ E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.ScheduledTask.ConsoleApp\obj\Deb
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.ScheduledTask.ConsoleApp\obj\Debug\netcoreapp2.1\AS.ScheduledTask.ConsoleApp.csproj.CopyComplete
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.ScheduledTask.ConsoleApp\obj\Debug\netcoreapp2.1\AS.ScheduledTask.ConsoleApp.dll
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.ScheduledTask.ConsoleApp\obj\Debug\netcoreapp2.1\AS.ScheduledTask.ConsoleApp.pdb
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.ScheduledTask.ConsoleApp\obj\Debug\netcoreapp2.1\AS.ScheduledTask.ConsoleApp.csproj.CoreCompileInputs.cache
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.ScheduledTask.ConsoleApp\obj\Debug\netcoreapp2.1\AS.ScheduledTask.ConsoleApp.genruntimeconfig.cache

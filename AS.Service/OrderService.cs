@@ -12,6 +12,7 @@ using System.Transactions;
 using AS.Model.AICFrame.Model.Entity;
 using AS.Dapper.Base;
 using AS.OCR.Dapper.Base;
+using System.Collections.Generic;
 
 namespace AS.Service
 {
@@ -38,15 +39,27 @@ namespace AS.Service
                     req.Data = new VoucherReturnByOrderIdRequest { OrderId = item.OrderId };
                     var r = PostCRM<bool?>("api/reward/OrderReturn", req);
                     if ((r == null) || (r.Result == null))
+                    {
                         Log.Error($"【api/reward/OrderReturn 异常】 【ErrorMessage】：返回值为空 ", null);
-
+                        Console.WriteLine($"【api/reward/OrderReturn 异常】 【ErrorMessage】：返回值为空 ");
+                        continue;
+                    }
                     if (r.Result.HasError)
+                    {
                         Log.Error($"【api/reward/OrderReturn 异常】 【ErrorMessage】：{r.Result.ErrorMessage} ", null);
-
+                        Console.WriteLine($"【api / reward / OrderReturn 异常】 【ErrorMessage】：{ r.Result.ErrorMessage}");
+                        continue;
+                    }
                     if (r.Data == null || !r.Data.Value)
+                    {
                         Log.Error($"【api/reward/OrderReturn 异常】 【ErrorMessage】：{r.Result.ErrorMessage} ", null);
-
-                    Log.Info($@"【订单退货成功】 : 订单Id ：【{item.OrderId}】==");
+                        Console.WriteLine($"【api/reward/OrderReturn 异常】 【ErrorMessage】：{r.Result.ErrorMessage} ");
+                    }
+                    else
+                    {
+                        Log.Info($@"【订单退货成功】 : 订单Id ：【{item.OrderId}】==");
+                        Console.WriteLine($@"【订单退货成功】 : 订单Id ：【{item.OrderId}】==");
+                    }
                 }
             }
             catch (Exception ex)
@@ -168,7 +181,6 @@ namespace AS.Service
                             }
                             #endregion
 
-                            Log.Info($"【逾期订单关闭， 订单号为：{x.OrderID}】");
                         }
                         #endregion
 
