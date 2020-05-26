@@ -6,3 +6,4 @@ E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.0
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.0\AS.Commom.dll
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.0\AS.Commom.pdb
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.0\AS.Commom.csproj.CoreCompileInputs.cache
+E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Release\netcoreapp2.0\AS.Commom.csprojAssemblyReference.cache
