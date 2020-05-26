@@ -19,7 +19,10 @@ INNER JOIN  Voucher AS v ON v.IsuueTaskID=god.ItemID
 AND v.AddedBy='团购秒杀购买' and v.VoucherStauts in (4,7) and v.ExpiryDate<getdate() 
 INNER JOIN Paying AS p ON g.OrderID = p.OrderID
 INNER JOIN WxPayInfo AS wpi ON p.PayingID=wpi.PayingId AND wpi.PayStatus=1
-where Not exists( select 1 from Voucher as v2 where v2.IsuueTaskID=god.ItemID and v2.BatchNo=g.OrderNo and v2.VoucherStauts=6)";
+where Not exists( 
+select 1 from Voucher as v2 where v2.IsuueTaskID=god.ItemID 
+and v2.BatchNo=g.OrderNo 
+and v2.VoucherStauts=6)";
             return GetListFromSql<OrderModel>(sql);
         }
 
