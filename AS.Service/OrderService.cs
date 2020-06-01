@@ -197,6 +197,32 @@ namespace AS.Service
 
         }
 
+        public void RedisSynchronization()
+        {
+            Console.WriteLine($"========{DateTime.Now.ToString()}：执行Redis同步========");
+            try
+            {
+                var req = new RequestModel<int>();
+                req.Shared = new Shared();
+                req.Data = 1;
+                var r = PostCRM<bool?>("api/master/RedisHot", req);
+                if (r != null && r.Data != null && r.Data.Value)
+                {
+                    Console.WriteLine($"{DateTime.Now.ToString()}：执行Redis同步成功！");
+                }
+                else
+                {
+                    Console.WriteLine($"执行Redis同步失败！");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"执行Redis同步失败！");
+                Log.Error("执行Redis同步失败！", ex);
+            }
+        }
+
         private static string Token;
 
         private string GetToken()

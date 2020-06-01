@@ -52,5 +52,6 @@ namespace AS.Commom.Configuration
         public static int ExpiryTime => GetConfig<int>("ExpiryTime");
         public static int OrderReturnTime => GetConfig<int>("OrderReturnTime");
         public static string RedisKey_ItemInventotyQty => "ItemInventotyQty";
+        public static int RedisSyncTime => GetConfig<int>("RedisSyncTime");
     }
 }
