@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj": {}
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj": {}
   },
   "projects": {
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj": {
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj",
+        "projectUniqueName": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj",
         "projectName": "AS.Commom",
-        "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj",
-        "packagesPath": "C:\\Users\\AICer\\.nuget\\packages\\",
-        "outputPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\obj\\",
+        "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj",
+        "packagesPath": "C:\\Users\\95356\\.nuget\\packages\\",
+        "outputPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AICer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\95356\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,12 +75,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

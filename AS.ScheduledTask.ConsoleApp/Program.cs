@@ -28,7 +28,7 @@ namespace AS.ScheduledTask.ConsoleApp
             time = new System.Timers.Timer();
             time.Enabled = true;
             time.Elapsed += OrderCancel;
-            time.Elapsed += RedisSynchronization;
+            //time.Elapsed += RedisSynchronization;
 
             if (ConfigurationUtil.OrderReturnEnabled)
                 time.Elapsed += OrderReturn;

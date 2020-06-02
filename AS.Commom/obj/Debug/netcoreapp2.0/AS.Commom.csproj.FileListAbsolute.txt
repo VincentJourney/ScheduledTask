@@ -6,3 +6,12 @@ E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Debug\netcoreapp2.0\A
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.dll
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.pdb
 E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.csproj.CoreCompileInputs.cache
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\bin\Debug\netcoreapp2.0\AS.Commom.deps.json
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\bin\Debug\netcoreapp2.0\AS.Commom.dll
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\bin\Debug\netcoreapp2.0\AS.Commom.pdb
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.csprojAssemblyReference.cache
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.AssemblyInfoInputs.cache
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.AssemblyInfo.cs
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.csproj.CoreCompileInputs.cache
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.dll
+X:\AIC\Develop-Project\CRM\ScheduledTask_OrderReturn\AS.Commom\obj\Debug\netcoreapp2.0\AS.Commom.pdb

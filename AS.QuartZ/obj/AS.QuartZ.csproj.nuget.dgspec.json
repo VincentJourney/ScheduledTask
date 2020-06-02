@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.QuartZ\\AS.QuartZ.csproj": {}
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.QuartZ\\AS.QuartZ.csproj": {}
   },
   "projects": {
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj": {
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj",
+        "projectUniqueName": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj",
         "projectName": "AS.Commom",
-        "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj",
-        "packagesPath": "C:\\Users\\AICer\\.nuget\\packages\\",
-        "outputPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\obj\\",
+        "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj",
+        "packagesPath": "C:\\Users\\95356\\.nuget\\packages\\",
+        "outputPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AICer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\95356\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,29 +75,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Dapper\\AS.Dapper.csproj": {
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Dapper\\AS.Dapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Dapper\\AS.Dapper.csproj",
+        "projectUniqueName": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Dapper\\AS.Dapper.csproj",
         "projectName": "AS.Dapper",
-        "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Dapper\\AS.Dapper.csproj",
-        "packagesPath": "C:\\Users\\AICer\\.nuget\\packages\\",
-        "outputPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Dapper\\obj\\",
+        "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Dapper\\AS.Dapper.csproj",
+        "packagesPath": "C:\\Users\\95356\\.nuget\\packages\\",
+        "outputPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Dapper\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AICer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\95356\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -113,11 +102,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj": {
-                "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Commom\\AS.Commom.csproj"
+              "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj": {
+                "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Commom\\AS.Commom.csproj"
               },
-              "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.IDAO\\AS.IDAO.csproj": {
-                "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.IDAO\\AS.IDAO.csproj"
+              "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.IDAO\\AS.IDAO.csproj": {
+                "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.IDAO\\AS.IDAO.csproj"
               }
             }
           }
@@ -160,29 +149,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.IDAO\\AS.IDAO.csproj": {
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.IDAO\\AS.IDAO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.IDAO\\AS.IDAO.csproj",
+        "projectUniqueName": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.IDAO\\AS.IDAO.csproj",
         "projectName": "AS.IDAO",
-        "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.IDAO\\AS.IDAO.csproj",
-        "packagesPath": "C:\\Users\\AICer\\.nuget\\packages\\",
-        "outputPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.IDAO\\obj\\",
+        "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.IDAO\\AS.IDAO.csproj",
+        "packagesPath": "C:\\Users\\95356\\.nuget\\packages\\",
+        "outputPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.IDAO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AICer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\95356\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -195,8 +176,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Model\\AS.Model.csproj": {
-                "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Model\\AS.Model.csproj"
+              "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Model\\AS.Model.csproj": {
+                "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Model\\AS.Model.csproj"
               }
             }
           }
@@ -227,29 +208,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Model\\AS.Model.csproj": {
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Model\\AS.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Model\\AS.Model.csproj",
+        "projectUniqueName": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Model\\AS.Model.csproj",
         "projectName": "AS.Model",
-        "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Model\\AS.Model.csproj",
-        "packagesPath": "C:\\Users\\AICer\\.nuget\\packages\\",
-        "outputPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Model\\obj\\",
+        "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Model\\AS.Model.csproj",
+        "packagesPath": "C:\\Users\\95356\\.nuget\\packages\\",
+        "outputPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Model\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AICer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\95356\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -294,29 +267,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.QuartZ\\AS.QuartZ.csproj": {
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.QuartZ\\AS.QuartZ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.QuartZ\\AS.QuartZ.csproj",
+        "projectUniqueName": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.QuartZ\\AS.QuartZ.csproj",
         "projectName": "AS.QuartZ",
-        "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.QuartZ\\AS.QuartZ.csproj",
-        "packagesPath": "C:\\Users\\AICer\\.nuget\\packages\\",
-        "outputPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.QuartZ\\obj\\",
+        "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.QuartZ\\AS.QuartZ.csproj",
+        "packagesPath": "C:\\Users\\95356\\.nuget\\packages\\",
+        "outputPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.QuartZ\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AICer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\95356\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -329,8 +294,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Service\\AS.Service.csproj": {
-                "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Service\\AS.Service.csproj"
+              "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Service\\AS.Service.csproj": {
+                "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Service\\AS.Service.csproj"
               }
             }
           }
@@ -369,29 +334,21 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Service\\AS.Service.csproj": {
+    "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Service\\AS.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Service\\AS.Service.csproj",
+        "projectUniqueName": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Service\\AS.Service.csproj",
         "projectName": "AS.Service",
-        "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Service\\AS.Service.csproj",
-        "packagesPath": "C:\\Users\\AICer\\.nuget\\packages\\",
-        "outputPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Service\\obj\\",
+        "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Service\\AS.Service.csproj",
+        "packagesPath": "C:\\Users\\95356\\.nuget\\packages\\",
+        "outputPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Service\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AICer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\95356\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -404,11 +361,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Dapper\\AS.Dapper.csproj": {
-                "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.Dapper\\AS.Dapper.csproj"
+              "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Dapper\\AS.Dapper.csproj": {
+                "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.Dapper\\AS.Dapper.csproj"
               },
-              "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.IDAO\\AS.IDAO.csproj": {
-                "projectPath": "E:\\Vincent\\SelfGIT储存库\\AS.ScheduledTask\\AS.IDAO\\AS.IDAO.csproj"
+              "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.IDAO\\AS.IDAO.csproj": {
+                "projectPath": "X:\\AIC\\Develop-Project\\CRM\\ScheduledTask_OrderReturn\\AS.IDAO\\AS.IDAO.csproj"
               }
             }
           }
@@ -443,12 +400,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "win-x64": {
-          "#import": []
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
