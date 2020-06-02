@@ -29,15 +29,11 @@ namespace AS.ScheduledTask.ConsoleApp
             time.Enabled = true;
             time.Elapsed += OrderCancel;
             //time.Elapsed += RedisSynchronization;
-
             if (ConfigurationUtil.OrderReturnEnabled)
                 time.Elapsed += OrderReturn;
-
             time.Interval = Convert.ToInt32(1000 * ConfigurationUtil.CancelTriggerTime);
             time.Start();
-
             Console.ReadKey();
-
         }
         /// <summary>
         /// 订单取消
