@@ -1,8 +1,0 @@
-E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Model\bin\Release\netcoreapp3.1\AS.Model.deps.json
-E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Model\bin\Release\netcoreapp3.1\AS.Model.dll
-E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Model\bin\Release\netcoreapp3.1\AS.Model.pdb
-E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Model\obj\Release\netcoreapp3.1\AS.Model.AssemblyInfoInputs.cache
-E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Model\obj\Release\netcoreapp3.1\AS.Model.AssemblyInfo.cs
-E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Model\obj\Release\netcoreapp3.1\AS.Model.dll
-E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Model\obj\Release\netcoreapp3.1\AS.Model.pdb
-E:\Vincent\SelfGIT储存库\AS.ScheduledTask\AS.Model\obj\Release\netcoreapp3.1\AS.Model.csprojAssemblyReference.cache
